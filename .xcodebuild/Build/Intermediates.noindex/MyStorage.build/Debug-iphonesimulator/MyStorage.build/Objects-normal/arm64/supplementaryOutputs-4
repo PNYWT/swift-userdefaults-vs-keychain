@@ -1,0 +1,37 @@
+{
+  "/Users/arpopanda/Desktop/MyStorage/MyStorage/Models/UserProfile/UserProfile.swift" : {
+    "const-values" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/UserProfile.swiftconstvalues",
+    "dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/UserProfile.d",
+    "diagnostics" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/UserProfile.dia",
+    "object" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/UserProfile.o",
+    "swift-dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/UserProfile.swiftdeps"
+  },
+  "/Users/arpopanda/Desktop/MyStorage/MyStorage/Models/UserProfile/UserProfileResponse.swift" : {
+    "const-values" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/UserProfileResponse.swiftconstvalues",
+    "dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/UserProfileResponse.d",
+    "diagnostics" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/UserProfileResponse.dia",
+    "object" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/UserProfileResponse.o",
+    "swift-dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/UserProfileResponse.swiftdeps"
+  },
+  "/Users/arpopanda/Desktop/MyStorage/MyStorage/Scenes/Auth/AuthView.swift" : {
+    "const-values" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/AuthView.swiftconstvalues",
+    "dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/AuthView.d",
+    "diagnostics" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/AuthView.dia",
+    "object" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/AuthView.o",
+    "swift-dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/AuthView.swiftdeps"
+  },
+  "/Users/arpopanda/Desktop/MyStorage/MyStorage/Scenes/Auth/AuthViewModel.swift" : {
+    "const-values" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/AuthViewModel.swiftconstvalues",
+    "dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/AuthViewModel.d",
+    "diagnostics" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/AuthViewModel.dia",
+    "object" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/AuthViewModel.o",
+    "swift-dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/AuthViewModel.swiftdeps"
+  },
+  "/Users/arpopanda/Desktop/MyStorage/MyStorage/Scenes/Onboarding/OnboardingView.swift" : {
+    "const-values" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/OnboardingView.swiftconstvalues",
+    "dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/OnboardingView.d",
+    "diagnostics" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/OnboardingView.dia",
+    "object" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/OnboardingView.o",
+    "swift-dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/OnboardingView.swiftdeps"
+  }
+}

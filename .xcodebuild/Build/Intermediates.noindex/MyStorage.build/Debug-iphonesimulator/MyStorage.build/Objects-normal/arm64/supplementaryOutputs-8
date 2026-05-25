@@ -1,0 +1,37 @@
+{
+  "/Users/arpopanda/Desktop/MyStorage/MyStorage/Services/LocalDatabaseService/UserProfileService.swift" : {
+    "const-values" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/UserProfileService.swiftconstvalues",
+    "dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/UserProfileService.d",
+    "diagnostics" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/UserProfileService.dia",
+    "object" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/UserProfileService.o",
+    "swift-dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/UserProfileService.swiftdeps"
+  },
+  "/Users/arpopanda/Desktop/MyStorage/MyStorage/Services/LocalDatabaseService/UserProfileServiceProtocol.swift" : {
+    "const-values" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/UserProfileServiceProtocol.swiftconstvalues",
+    "dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/UserProfileServiceProtocol.d",
+    "diagnostics" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/UserProfileServiceProtocol.dia",
+    "object" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/UserProfileServiceProtocol.o",
+    "swift-dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/UserProfileServiceProtocol.swiftdeps"
+  },
+  "/Users/arpopanda/Desktop/MyStorage/MyStorage/Services/Preferences/AppPreferencesService.swift" : {
+    "const-values" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/AppPreferencesService.swiftconstvalues",
+    "dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/AppPreferencesService.d",
+    "diagnostics" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/AppPreferencesService.dia",
+    "object" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/AppPreferencesService.o",
+    "swift-dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/AppPreferencesService.swiftdeps"
+  },
+  "/Users/arpopanda/Desktop/MyStorage/MyStorage/Services/Preferences/AppPreferencesServiceProtocol.swift" : {
+    "const-values" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/AppPreferencesServiceProtocol.swiftconstvalues",
+    "dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/AppPreferencesServiceProtocol.d",
+    "diagnostics" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/AppPreferencesServiceProtocol.dia",
+    "object" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/AppPreferencesServiceProtocol.o",
+    "swift-dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/AppPreferencesServiceProtocol.swiftdeps"
+  },
+  "/Users/arpopanda/Desktop/MyStorage/MyStorage/Services/SecureStore/SecureStoreService.swift" : {
+    "const-values" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/SecureStoreService.swiftconstvalues",
+    "dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/SecureStoreService.d",
+    "diagnostics" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/SecureStoreService.dia",
+    "object" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/SecureStoreService.o",
+    "swift-dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/arm64/SecureStoreService.swiftdeps"
+  }
+}

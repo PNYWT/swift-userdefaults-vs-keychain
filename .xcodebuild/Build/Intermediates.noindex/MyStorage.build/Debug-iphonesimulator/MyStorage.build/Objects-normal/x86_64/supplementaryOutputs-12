@@ -1,0 +1,30 @@
+{
+  "/Users/arpopanda/Desktop/MyStorage/MyStorage/Services/WebService/WebServiceLogger.swift" : {
+    "const-values" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/x86_64/WebServiceLogger.swiftconstvalues",
+    "dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/x86_64/WebServiceLogger.d",
+    "diagnostics" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/x86_64/WebServiceLogger.dia",
+    "object" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/x86_64/WebServiceLogger.o",
+    "swift-dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/x86_64/WebServiceLogger.swiftdeps"
+  },
+  "/Users/arpopanda/Desktop/MyStorage/MyStorage/Storages/Keychain/KeychainConfiguration.swift" : {
+    "const-values" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/x86_64/KeychainConfiguration.swiftconstvalues",
+    "dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/x86_64/KeychainConfiguration.d",
+    "diagnostics" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/x86_64/KeychainConfiguration.dia",
+    "object" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/x86_64/KeychainConfiguration.o",
+    "swift-dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/x86_64/KeychainConfiguration.swiftdeps"
+  },
+  "/Users/arpopanda/Desktop/MyStorage/MyStorage/Storages/Keychain/KeychainError.swift" : {
+    "const-values" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/x86_64/KeychainError.swiftconstvalues",
+    "dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/x86_64/KeychainError.d",
+    "diagnostics" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/x86_64/KeychainError.dia",
+    "object" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/x86_64/KeychainError.o",
+    "swift-dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/x86_64/KeychainError.swiftdeps"
+  },
+  "/Users/arpopanda/Desktop/MyStorage/MyStorage/Storages/Keychain/KeychainManager.swift" : {
+    "const-values" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/x86_64/KeychainManager.swiftconstvalues",
+    "dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/x86_64/KeychainManager.d",
+    "diagnostics" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/x86_64/KeychainManager.dia",
+    "object" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/x86_64/KeychainManager.o",
+    "swift-dependencies" : "/Users/arpopanda/Desktop/MyStorage/.xcodebuild/Build/Intermediates.noindex/MyStorage.build/Debug-iphonesimulator/MyStorage.build/Objects-normal/x86_64/KeychainManager.swiftdeps"
+  }
+}
