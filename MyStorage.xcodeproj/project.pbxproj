@@ -6,8 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXContainerItemProxy section */
+		C1A000072FC50000001F5484 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B257BA8F2FC43245001F5484 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B257BA962FC43245001F5484;
+			remoteInfo = MyStorage;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		B257BA972FC43245001F5484 /* MyStorage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyStorage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1A000012FC50000001F5484 /* MyStorageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyStorageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +27,22 @@
 			path = MyStorage;
 			sourceTree = "<group>";
 		};
+		C1A000022FC50000001F5484 /* MyStorageTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = MyStorageTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B257BA942FC43245001F5484 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1A000032FC50000001F5484 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				B257BA992FC43245001F5484 /* MyStorage */,
+				C1A000022FC50000001F5484 /* MyStorageTests */,
 				B257BA982FC43245001F5484 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				B257BA972FC43245001F5484 /* MyStorage.app */,
+				C1A000012FC50000001F5484 /* MyStorageTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,6 +95,29 @@
 			productReference = B257BA972FC43245001F5484 /* MyStorage.app */;
 			productType = "com.apple.product-type.application";
 		};
+		C1A000062FC50000001F5484 /* MyStorageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1A0000B2FC50000001F5484 /* Build configuration list for PBXNativeTarget "MyStorageTests" */;
+			buildPhases = (
+				C1A000052FC50000001F5484 /* Sources */,
+				C1A000032FC50000001F5484 /* Frameworks */,
+				C1A000042FC50000001F5484 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1A000082FC50000001F5484 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C1A000022FC50000001F5484 /* MyStorageTests */,
+			);
+			name = MyStorageTests;
+			packageProductDependencies = (
+			);
+			productName = MyStorageTests;
+			productReference = C1A000012FC50000001F5484 /* MyStorageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -82,6 +130,10 @@
 				TargetAttributes = {
 					B257BA962FC43245001F5484 = {
 						CreatedOnToolsVersion = 26.5;
+					};
+					C1A000062FC50000001F5484 = {
+						CreatedOnToolsVersion = 26.5;
+						TestTargetID = B257BA962FC43245001F5484;
 					};
 				};
 			};
@@ -100,12 +152,20 @@
 			projectRoot = "";
 			targets = (
 				B257BA962FC43245001F5484 /* MyStorage */,
+				C1A000062FC50000001F5484 /* MyStorageTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B257BA952FC43245001F5484 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C1A000042FC50000001F5484 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +182,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C1A000052FC50000001F5484 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C1A000082FC50000001F5484 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B257BA962FC43245001F5484 /* MyStorage */;
+			targetProxy = C1A000072FC50000001F5484 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		B257BAA02FC43247001F5484 /* Debug */ = {
@@ -316,6 +391,66 @@
 			};
 			name = Release;
 		};
+		C1A000092FC50000001F5484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FYTDS8YWKN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.callmeoni.MyStorageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyStorage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyStorage";
+				TEST_TARGET_NAME = MyStorage;
+			};
+			name = Debug;
+		};
+		C1A0000A2FC50000001F5484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FYTDS8YWKN;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.callmeoni.MyStorageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyStorage.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyStorage";
+				TEST_TARGET_NAME = MyStorage;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -333,6 +468,15 @@
 			buildConfigurations = (
 				B257BAA32FC43247001F5484 /* Debug */,
 				B257BAA42FC43247001F5484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1A0000B2FC50000001F5484 /* Build configuration list for PBXNativeTarget "MyStorageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C1A000092FC50000001F5484 /* Debug */,
+				C1A0000A2FC50000001F5484 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum UserProfileRefreshSource {
+enum UserProfileRefreshSource: Equatable {
     case remoteUpdatedCache
     case remoteUnchanged
     case cachedFallback

@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum UserProfileServiceError: LocalizedError {
+enum UserProfileServiceError: LocalizedError, Equatable {
     case missingCredentials
 
     var errorDescription: String? {

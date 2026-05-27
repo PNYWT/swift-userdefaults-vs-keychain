@@ -1,78 +1,78 @@
 # swift-userdefaults-vs-keychain
 
-Sample iOS SwiftUI project that compares `UserDefaults` and `Keychain` in a production-oriented MVVM structure with realistic models, reusable web services, and a local database flow for cached profile data.
+โปรเจ็กต์ตัวอย่าง iOS SwiftUI ที่ใช้เปรียบเทียบ `UserDefaults` และ `Keychain` บนโครงสร้าง MVVM แบบที่ใกล้เคียงงานจริง พร้อม `WebService` ที่นำกลับมาใช้ซ้ำได้ และลำดับการทำงานของ local database สำหรับ cache ข้อมูลโปรไฟล์ผู้ใช้
 
-## Overview
+## ภาพรวม
 
-This project demonstrates:
+โปรเจ็กต์นี้สาธิตเรื่องหลัก ๆ ดังนี้:
 
-- When to use `UserDefaults`
-- When to use `Keychain`
-- What kind of data belongs in a local database
-- How to wire both into a SwiftUI MVVM app with `Scenes`, `Models`, `Services`, and `Storages`
+- ควรใช้ `UserDefaults` เมื่อไร
+- ควรใช้ `Keychain` เมื่อไร
+- ข้อมูลแบบไหนควรอยู่ใน local database
+- จะต่อทั้งหมดเข้ากับแอป SwiftUI MVVM โดยใช้ `Scenes`, `Models`, `Services`, และ `Storages` อย่างไร
 
-The app has two clear flows:
+แอปมี 3 ลำดับการทำงานหลักที่แยกชัดเจน:
 
-- An onboarding flow backed by `UserDefaults`
-- An auth flow backed by `Keychain` and a decoded authentication response
-- A profile flow backed by `SwiftData` for cached protected user data
+- ลำดับการทำงานของ onboarding ที่ใช้ `UserDefaults`
+- ลำดับการทำงานของ authentication ที่ใช้ `Keychain` และ decode ผลลัพธ์จาก API
+- ลำดับการทำงานของโปรไฟล์ผู้ใช้ที่ใช้ `SwiftData` สำหรับ cache ข้อมูลผู้ใช้ที่ต้องใช้สิทธิ์เข้าถึง
 
-The repository also includes a realistic local database example for caching the authenticated user profile with `SwiftData`.
+repo นี้ยังมีตัวอย่าง local database ที่ใกล้เคียงการใช้งานจริง โดยใช้ `SwiftData` สำหรับ cache โปรไฟล์ของผู้ใช้ที่ login แล้ว
 
-The active environment is controlled centrally through `AppConfig.current`.
+environment ที่ใช้งานอยู่จะถูกควบคุมจากจุดเดียวผ่าน `AppConfig.current`
 
-## What Goes Where
+## ข้อมูลแบบไหนควรเก็บที่ไหน
 
 ### UserDefaults
 
-Use `UserDefaults` for non-sensitive app state such as:
+ใช้ `UserDefaults` สำหรับข้อมูลสถานะของแอปที่ไม่ใช่ความลับ เช่น:
 
-- onboarding completion
+- ผู้ใช้ผ่าน onboarding แล้วหรือยัง
 - feature flags
-- theme selection
-- simple preferences
+- theme ที่เลือก
+- preferences ทั่วไป
 
-In this project:
+ในโปรเจ็กต์นี้:
 
-- `hasCompletedOnboarding` is stored in `UserDefaults`
+- `hasCompletedOnboarding` ถูกเก็บไว้ใน `UserDefaults`
 
 ### Keychain
 
-Use `Keychain` for sensitive data such as:
+ใช้ `Keychain` สำหรับข้อมูลที่เป็นความลับ เช่น:
 
-- access tokens
-- refresh tokens
-- passwords
-- API keys
+- access token
+- refresh token
+- password
+- API key
 
-In this project:
+ในโปรเจ็กต์นี้:
 
 - `accessToken`
 - `refreshToken`
 - `userPassword`
 
-are stored in `Keychain`.
+ถูกเก็บไว้ใน `Keychain`
 
 ### Local Database
 
-Use a local database for structured offline or cached data such as:
+ใช้ local database สำหรับข้อมูลที่มีโครงสร้าง และต้องการเก็บไว้ใช้งานซ้ำหรือรองรับ offline เช่น:
 
-- user profiles
-- addresses
-- order history
-- carts
-- orders
-- any data you want to fetch once and reuse offline
+- โปรไฟล์ผู้ใช้
+- ที่อยู่
+- ประวัติคำสั่งซื้อ
+- cart
+- order
+- ข้อมูลที่ fetch มาครั้งหนึ่งแล้วต้องการนำกลับมาใช้ซ้ำ
 
-In this project:
+ในโปรเจ็กต์นี้:
 
-- `UserProfile` is the plain model
-- `CachedUserProfile` is the `SwiftData` persistence model
-- `LocalDatabase` is the wrapper around the local store
+- `UserProfile` คือ model ปกติของแอป
+- `CachedUserProfile` คือ persistence model ของ `SwiftData`
+- `LocalDatabase` คือ wrapper ของ local store
 
-## Architecture
+## สถาปัตยกรรม
 
-This project currently uses a production-oriented MVVM structure:
+โปรเจ็กต์นี้ใช้โครงสร้าง MVVM ที่เอนไปทาง production-oriented:
 
 ```text
 View
@@ -80,27 +80,27 @@ View
 -> Service / Manager
 ```
 
-Examples:
+ตัวอย่างความสัมพันธ์:
 
 - `AppRootView` -> `AppRootViewModel` -> `AppPreferencesService`
 - `OnboardingView` -> `OnboardingViewModel` -> `AppPreferencesService` -> `UserDefaultsManager`
-- `AuthView` -> `AuthViewModel` -> `AuthWebService` -> `WebService` -> decoded `LoginResponse`
+- `AuthView` -> `AuthViewModel` -> `AuthWebService` -> `WebService` -> decode `LoginResponse`
 - `AuthView` -> `AuthViewModel` -> `SecureStoreService` -> `KeychainManager`
 - `UserProfileView` -> `UserProfileViewModel` -> `UserProfileService` -> `UserProfileWebService` + `LocalDatabase`
 
-The goal is to keep the flow clear and practical for an article-backed sample:
+เป้าหมายคือทำให้ลำดับการทำงานอ่านง่ายและเอาไปอิงเขียนบทความหรือทำแอปต่อได้จริง:
 
-- `View` renders UI
-- `ViewModel` owns screen state and user actions
-- `Models` describe request and response payloads
-- `Services` hold app-level wrappers and web service abstractions
-- `AppConfig` centralizes app environment and base URL selection
-- `WebService` centralizes request building and decoding
-- `SecureStoreService` is the sensitive-data bridge above Keychain
-- `LocalDatabase` is the structured-data bridge above SwiftData
-- storage managers handle persistence details
+- `View` รับผิดชอบการแสดงผล
+- `ViewModel` รับผิดชอบ state ของหน้าจอและ action ของผู้ใช้
+- `Models` อธิบาย request และ response payload
+- `Services` เป็น app-level wrappers และ abstraction ของ web service
+- `AppConfig` เป็นศูนย์กลางของ environment และ base URL
+- `WebService` เป็นศูนย์กลางของการสร้าง request และ decode response
+- `SecureStoreService` เป็นตัวกลางของข้อมูลที่เป็นความลับเหนือ Keychain
+- `LocalDatabase` เป็นตัวกลางของข้อมูลแบบมีโครงสร้างเหนือ SwiftData
+- storage managers รับผิดชอบรายละเอียดของ persistence
 
-## Project Structure
+## โครงสร้างโปรเจ็กต์
 
 ```text
 MyStorage
@@ -161,7 +161,7 @@ MyStorage
     └── StorageKeys.swift
 ```
 
-## Important Files
+## ไฟล์สำคัญ
 
 - [AppConfig.swift](./MyStorage/Config/AppConfig.swift)
 - [AppRootView.swift](./MyStorage/Scenes/Root/AppRootView.swift)
@@ -184,98 +184,121 @@ MyStorage
 - [KeychainManager.swift](./MyStorage/Storages/Keychain/KeychainManager.swift)
 - [StorageKeys.swift](./MyStorage/Storages/StorageKeys.swift)
 
-## WebService Notes
+## หมายเหตุเรื่อง WebService
 
-The shared `WebService` layer in this project supports:
+`WebService` กลางของโปรเจ็กต์นี้รองรับ:
 
-- app-config-based `baseURL`
-- reusable endpoint definitions
-- `GET` and `POST`
-- query items and request bodies
-- generic `Decodable` response handling
-- real network transport for production
+- `baseURL` ที่มาจาก `AppConfig`
+- endpoint definitions ที่นำกลับมาใช้ซ้ำได้
+- `GET` และ `POST`
+- query items และ request body
+- การ decode `Decodable` แบบ generic
+- network transport จริงสำหรับ production
 
-The default demo setup uses:
+ค่าเริ่มต้นของ demo ตอนนี้ใช้:
 
 - `AppConfig.current`
-- mock response generation inside `AuthWebService`
-- request/response logging controlled by `AppConfig.shouldLogNetwork`
-- sensitive values masked before printing, for example `abc********`
+- mock response generation ภายใน `AuthWebService`
+- request/response logging ที่ควบคุมผ่าน `AppConfig.shouldLogNetwork`
+- การ mask ค่าที่เป็นความลับก่อน log เช่น `abc********`
 
-This keeps the structure close to production while still letting the example run without a real backend.
+โครงแบบนี้ช่วยให้ใกล้เคียง production แต่ยังรันตัวอย่างได้โดยไม่ต้องมี backend จริง
 
-## Local Database Notes
+## หมายเหตุเรื่อง Local Database
 
-The local database layer in this project uses `SwiftData` because it fits a modern SwiftUI app and is a good match for lightweight caching.
+local database ในโปรเจ็กต์นี้ใช้ `SwiftData` เพราะเหมาะกับแอป SwiftUI สมัยใหม่ และเหมาะกับงาน cache แบบไม่ซับซ้อนเกินไป
 
-The current scaffold is intentionally simple:
+โครงสร้างตัวอย่างปัจจุบันตั้งใจให้เรียบแต่ยังสมจริง:
 
-- `UserProfile` is a plain Swift model that could come from a protected profile endpoint
-- `CachedUserProfile` is the persisted `SwiftData` model
-- `LocalDatabase` saves, fetches, and clears cached user profile records
-- `UserProfileService` coordinates between `SecureStoreService`, `UserProfileWebService`, and `LocalDatabase`
-- `UserProfileService` updates the cache only when the fetched profile changed
-- `UserProfileService` falls back to cached data when the remote request fails and local data already exists
+- `UserProfile` เป็น Swift model ปกติที่อาจมาจาก profile endpoint ที่ต้องใช้สิทธิ์เข้าถึง
+- `CachedUserProfile` เป็น persisted model ของ `SwiftData`
+- `LocalDatabase` รองรับการ save, fetch, และ clear cached user profile
+- `UserProfileService` เป็นตัวกลางระหว่าง `SecureStoreService`, `UserProfileWebService`, และ `LocalDatabase`
+- `UserProfileService` จะ update cache เฉพาะเมื่อข้อมูลที่ fetch มาเปลี่ยนจริง
+- `UserProfileService` จะ fallback ไปใช้ cached data เมื่อ remote request ล้มเหลวแต่ local data ยังมีอยู่
 
-This keeps local persistence separate from:
+แบบนี้ทำให้ local persistence แยกชัดจาก:
 
-- `UserDefaults` for simple app state
-- `Keychain` for sensitive data
+- `UserDefaults` ที่ใช้เก็บ app state ง่าย ๆ
+- `Keychain` ที่ใช้เก็บข้อมูลลับ
 
-## Keychain Notes
+## การทดสอบ
 
-The `KeychainManager` in this project supports:
+โปรเจ็กต์นี้ใช้ `XCTest` เป็นมาตรฐานหลักของการทดสอบ และใช้ hand-written mocks เป็นค่าเริ่มต้น
 
-- read `String`
-- read `Data`
-- save values
-- update on duplicate item
-- delete values
+ขอบเขตการทดสอบปัจจุบันมี:
 
-It uses:
+- unit tests ของ `Services`
+- unit tests ของ `ViewModel`
+- integration tests ของ `Keychain`
+- integration tests ของ `LocalDatabase`
+
+โครงสร้าง test ถูกจัดให้สอดคล้องกับ production structure:
+
+```text
+MyStorageTests
+├── Scenes
+├── Services
+├── Storages
+└── Support/Mocks
+```
+
+ดูรายละเอียดกติกาการทดสอบต่อได้ที่ [TESTING.md](./TESTING.md)
+
+## หมายเหตุเรื่อง Keychain
+
+`KeychainManager` ในโปรเจ็กต์นี้รองรับ:
+
+- อ่าน `String`
+- อ่าน `Data`
+- save ค่า
+- update เมื่อเจอ duplicate item
+- delete ค่า
+
+โดยใช้:
 
 - `kSecClassGenericPassword`
 - `kSecAttrService`
 - `kSecAttrAccount`
 - `kSecAttrAccessibleWhenUnlockedThisDeviceOnly`
 
-The default service is currently:
+ค่า service เริ่มต้นตอนนี้คือ:
 
 ```swift
 static let keychainService: String = "com.companyname.appname"
 ```
 
-Keep this value stable. Changing it later will make previously saved Keychain items unreadable by the app unless migration is handled.
+ค่านี้ควรถูกเก็บให้คงที่ ถ้าเปลี่ยนภายหลัง แอปจะอ่าน Keychain item เก่าไม่เจอ เว้นแต่มี migration รองรับไว้
 
-## Running the Project
+## การรันโปรเจ็กต์
 
-Open the Xcode project:
+เปิด Xcode project:
 
 ```text
 MyStorage.xcodeproj
 ```
 
-Or build from terminal:
+หรือ build ผ่าน terminal:
 
 ```bash
 xcodebuild -scheme MyStorage -project MyStorage.xcodeproj -configuration Debug -sdk iphonesimulator -derivedDataPath .xcodebuild CODE_SIGNING_ALLOWED=NO build
 ```
 
-## Demo Flow
+## ลำดับการทำงานตัวอย่าง
 
-1. Launch the app
-2. Complete onboarding
-3. Enter email and password on the auth screen
-4. Trigger login through `AuthWebService`
-5. Decode `LoginResponse`
-6. Save tokens and password into Keychain
-7. Enter the user profile scene automatically after a successful login
-8. Fetch protected profile data through `UserProfileWebService`
-9. Cache that profile in `LocalDatabase`
-10. Reload, clear, or sign out from the UI
+1. เปิดแอป
+2. ผ่าน onboarding ให้ครบ
+3. กรอก email และ password ในหน้าจอ auth
+4. เรียก login ผ่าน `AuthWebService`
+5. decode `LoginResponse`
+6. บันทึก token และ password ลง `Keychain`
+7. เข้า `UserProfile` อัตโนมัติหลัง login สำเร็จ
+8. fetch ข้อมูลโปรไฟล์ที่ต้องใช้สิทธิ์เข้าถึงผ่าน `UserProfileWebService`
+9. cache โปรไฟล์ไว้ใน `LocalDatabase`
+10. reload, clear หรือ sign out ผ่าน UI ได้
 
-## Notes
+## หมายเหตุ
 
-- This project is intentionally simple and focused on storage usage.
-- It is suitable as a reference for learning when to choose `UserDefaults` vs `Keychain`.
-- If the app grows, you can add more scenes while keeping the same `Scenes / Services / Storages` structure.
+- โปรเจ็กต์นี้ตั้งใจให้เรียบและโฟกัสที่การใช้งาน storage
+- เหมาะใช้เป็นตัวอย่างอ้างอิงสำหรับการเลือกใช้ `UserDefaults` กับ `Keychain`
+- ถ้าแอปโตต่อ สามารถเพิ่ม scenes ใหม่ได้โดยยังรักษาโครง `Scenes / Services / Storages` เดิมไว้

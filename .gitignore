@@ -1,0 +1,12 @@
+.DS_Store
+.xcodebuild/
+
+# Xcode user data
+MyStorage.xcodeproj/xcuserdata/
+MyStorage.xcodeproj/project.xcworkspace/xcuserdata/
+
+# Swift Package Manager
+.build/
+
+# Test and result bundles
+*.xcresult

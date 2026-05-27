@@ -10,7 +10,7 @@ import Combine
 
 @MainActor
 final class AppRootViewModel: ObservableObject {
-    enum Route {
+    enum Route: Equatable {
         case onboarding
         case auth
         case userProfile
